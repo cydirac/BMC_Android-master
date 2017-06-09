@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:padding="15dp"
+    tools:context="com.yingchen.bmc.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/company_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bmc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/username"
+        android:hint="@string/prompt_email"
+        android:layout_below="@+id/company_logo"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/password"
+        android:hint="@string/prompt_password"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:layout_below="@+id/username"/>
+    <Button
+        android:id="@+id/login_button"
+        android:layout_below="@+id/password"
+        android:text="@string/btn_string_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/ring_button"
+        android:text="@string/btn_ring_reception"
+        android:layout_below="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
